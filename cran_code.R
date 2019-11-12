@@ -30,6 +30,13 @@ cut.letters <- function(x, n) {
   } 
 }
 
-cran_code %>% 
+pkg_names <- cran_code %>% 
   filter(language == "R") %>% 
   pull(pkg_name)
+
+cut.pkg_names <- function(n) {
+  map(.x = pkg_names, .f = cut.letters, n = n)
+}
+
+results <- tibble(n = 3:5) %>% 
+  mutate(combinations = map(.x = n, .f = cut.pkg_names))
