@@ -47,7 +47,7 @@ results_top10 %>%
   coord_flip() +
   scale_y_continuous(expand = c(0, 0)) +
   labs(title = "CRAN keywords",
-       subtitle = "Most common words/affixes found \nin CRAN package names", 
+       subtitle = "Most common words/affixes found in CRAN package names", 
        x = "",
        y = "Frequency",
        caption = "Data: TidyTuesday/CRAN\nPackages: tidyverse, lexicon") +
