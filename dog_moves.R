@@ -21,13 +21,14 @@ dog_pop <- dog_descriptions %>%
   st_as_sf(coords = c("long", "lat"), remove = FALSE, scrs = 4326, agr = "constant")
 
 ggplot(usa) +
-  geom_sf(fill = "azure") +
+  geom_sf(fill = "seashell") +
   geom_sf(aes(size = n), data = dog_pop, show.legend = 'point', color = "#1c69ab") +
   coord_sf(crs = st_crs(2163), xlim = c(-2000000, 2500000), ylim = c(-2000000, 730000)) +
   theme(panel.background = element_blank(),
         axis.text = element_blank(),
         axis.ticks = element_blank(),
-        legend.position = "bottom") +
+        legend.position = "bottom",
+        legend.background = element_rect(color = "#1c69ab")) +
   labs(title = "Adoptable Dog Listings",
        caption = "Source: The Pudding\nPetfinder.com",
        size = "# of listings")
