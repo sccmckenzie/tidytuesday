@@ -21,7 +21,6 @@ food_consumption$geo <- countrycode(sourcevar = food_consumption[, "country"][[1
 
 food_consumption %>% 
   left_join(population) %>% 
-  left_join(population) %>% 
   drop_na() %>% 
   mutate(total_emmission = co2_emmission * population / 1e9,
          food_category = str_replace(food_category, " and ", " & "),
