@@ -5,7 +5,7 @@ library(countrycode)
 library(ggsci)
 
 population <- read_xlsx("population.xlsx") %>% # obtained from gapminder - http://gapm.io/dl_pop
-  filter(time == lubridate::year(now())) %>% 
+  filter(time == year(now())) %>% 
   select(geo, population)
 
 food_consumption <- read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2020/2020-02-18/food_consumption.csv')
@@ -50,7 +50,7 @@ food_consumption %>%
        y = "",
        fill = "Continent",
        title = bquote(CO^2~Emissions~Driven~By~Food~Consumption),
-       subtitle = "Billions of kg/year",
+       subtitle = paste0("Billions of kg/year - ", year(now()), " projection"),
        caption = "* denotes animal-based food product")
 
 
