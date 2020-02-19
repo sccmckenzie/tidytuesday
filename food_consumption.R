@@ -52,7 +52,7 @@ food_consumption %>%
        subtitle = paste0("Billions of kg/year - ", year(now()), " projection"),
        caption = "* denotes animal-based food product")
 
-# a
+
 
 
             
