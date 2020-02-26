@@ -19,7 +19,7 @@ get_stamenmap(bbox = c(-98, 30.16, -97.6, 30.42), zoom = 12, maptype = "toner-li
                        `(85,95]` = "85%-95%",
                        `(95,100]` = "Greater than 95%"
                      )) +
-  labs(x = "", y = "", title = "Private School Immunization Rates", subtitle = "Austin, Tx", caption = "Data: https://github.com/WSJ/measles-data") +
+  labs(x = "", y = "", title = "Private School Immunization Rates", subtitle = "Austin, TX", caption = "Data: https://github.com/WSJ/measles-data") +
   theme_void() +
   theme(text = element_text(family = 'Helvetica'),
         legend.position = c(-0.03, 1),
