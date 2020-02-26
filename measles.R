@@ -2,8 +2,6 @@ library(dplyr)
 library(forcats)
 library(ggmap)
 library(ggplot2)
-library(ggtext)
-library(viridis)
 
 texas_measles <- readr::read_csv("https://raw.githubusercontent.com/WSJ/measles-data/master/individual-states/texas.csv") %>% 
   mutate(mmr_cat = cut(mmr, breaks = c(0, 75, 85, 95, 100)) %>% fct_rev())
