@@ -8,8 +8,6 @@ texas_measles <- readr::read_csv("https://raw.githubusercontent.com/WSJ/measles-
 
 pal <- c("#b72a77", "#f1b6da", "#aed4ee", "#41a9b5")
 
-# test
-
 get_stamenmap(bbox = c(-98, 30.16, -97.6, 30.42), zoom = 12, maptype = "toner-lines") %>% 
   ggmap() +
   geom_point(aes(lng, lat), data = filter(texas_measles, county == "Travis"), color = "black", size = 5) +
