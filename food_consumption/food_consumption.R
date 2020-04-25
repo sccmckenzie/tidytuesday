@@ -55,8 +55,8 @@ food_consumption %>%
        subtitle = "Animal-based food production accounts for 87% of 2020 projections",
        caption = "@sccmckenzie") +
   theme(text = element_text("Roboto", size = 35, color = "#242424"),
-        plot.title = element_markdown(size = 80),
-        plot.subtitle = element_text(size = 40, margin = margin(0, 0, 10, 0)),
+        plot.title = element_markdown(size = 60),
+        plot.subtitle = element_text(size = 35, margin = margin(0, 0, 10, 0)),
         panel.grid.major.y = element_blank(),
         panel.grid.minor = element_blank(),
         axis.text = element_text(size = 30, color = "#242424"),
