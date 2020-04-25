@@ -16,7 +16,7 @@ library(patchwork) # seamlessly combine plots into same graphic
 paths <- bind_rows(tibble(year = c(2006, 2007, 2008, 2009, 2010, 2013), ext = c("-1.xls", rep(".xls", 5))),
                    tibble(year = c(2011, 2012, 2014), ext = ".xlsx")) %>% 
   mutate(url = glue("https://www2.census.gov/programs-surveys/demo/tables/age-and-sex/{year}/age-sex-composition/{year}gender_table1{ext}")) %>% 
-  arrange(year)
+  arrange(year)x
 
 census <- paths %>% 
   mutate(data = map2(url, ext, ~ {
@@ -97,4 +97,4 @@ p2 <- census %>%
                   theme = theme(plot.title = element_text("Heebo", size = 100, color = "#242424"),
                                 plot.caption = element_markdown("Heebo", size = 50, color = "#242424")))
 
-ggsave(here::here("tbi/tbi.png"), type = "cairo")
+ggsave(here::here("tbi", "tbi.png"), type = "cairo")
