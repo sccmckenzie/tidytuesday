@@ -97,4 +97,4 @@ p2 <- census %>%
                   theme = theme(plot.title = element_text("Heebo", size = 100, color = "#242424"),
                                 plot.caption = element_markdown("Heebo", size = 50, color = "#242424")))
 
-ggsave("test.png", type = "cairo")
+ggsave(here::here("tbi/tbi.png"), type = "cairo")

@@ -4,7 +4,7 @@ library(lubridate)
 library(countrycode)
 library(ggsci)
 
-population <- read_xlsx("population.xlsx") %>% # obtained from gapminder - http://gapm.io/dl_pop
+population <- read_xlsx(here::here("food_consumption", "population.xlsx")) %>% # obtained from gapminder - http://gapm.io/dl_pop
   filter(time == year(now())) %>% 
   select(geo, population)
 
