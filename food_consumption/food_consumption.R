@@ -60,8 +60,7 @@ food_consumption %>%
         panel.grid.major.y = element_blank(),
         panel.grid.minor = element_blank(),
         axis.text = element_text(size = 30, color = "#242424"),
-        plot.title.position = "plot",
-        plot.caption.position = "plot")
+        plot.title.position = "plot")
 
 ggsave(here::here("food_consumption", "food_consumption.png"), type = "cairo")
 
