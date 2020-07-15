@@ -2,6 +2,10 @@
 
 Contributions to the R4DS Online Learning Community Project
 
+2020-07-14 [code](astronauts/astronauts.R) - [Post](https://github.com/rfordatascience/tidytuesday/blob/master/data/2020/2020-07-14/readme.md)
+
+![astronauts](astronauts/astronauts.png)
+
 ---
 
 2020-03-25 - [Code](tbi/tbi.R) - [WSJ Data](https://github.com/WSJ/measles-data) - [Post](https://github.com/rfordatascience/tidytuesday/blob/master/data/2020/2020-03-24/readme.md)
