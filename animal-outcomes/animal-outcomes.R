@@ -59,14 +59,14 @@ p2 <- population %>%
         panel.grid.major.x = element_blank(),
         panel.grid.major.y = element_line(color = "#bdbdbd"),
         plot.title = element_text(size = 40)) +
-  labs(title = "Human Population",
+  labs(title = "Human Population Growth",
        x = "",
        y = "")
 
 
 p1 +  p2 +
   plot_layout(ncol = 2, widths = c(3, 2)) +
-  plot_annotation(title = "Animal Euthanizations in Queensland, Australia",
+  plot_annotation(title = "Animal Euthanasia in Queensland, Australia",
                   caption = "@sccmckenzie [Data: RSPCA | QGSO]") &
   theme(plot.background = element_rect(fill = "#FAF8F2", color = "#FAF8F2"),
         axis.ticks = element_line(color = "#bdbdbd"),
