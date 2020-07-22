@@ -4,6 +4,12 @@ Contributions to the R4DS Online Learning Community Project
 
 ---
 
+2020-07-21 - [Code](animal-outcomes/animal-outcomes.R) - [Post](https://github.com/rfordatascience/tidytuesday/blob/master/data/2020/2020-07-21/readme.md)
+
+![animal-outcomes](animal-outcomes/animal-outcomes.png)
+
+---
+
 2020-07-14 - [Code](astronauts/astronauts.R) - [Post](https://github.com/rfordatascience/tidytuesday/blob/master/data/2020/2020-07-14/readme.md)
 
 ![astronauts](astronauts/astronauts.png)
