@@ -4,6 +4,12 @@ Contributions to the R4DS Online Learning Community Project
 
 ---
 
+2020-09-15 - [Code](tidykids/tidykids.R) - [Post](https://github.com/rfordatascience/tidytuesday/blob/master/data/2020/2020-09-15/readme.md)
+
+![tidykids](tidykids/tidykids.png)
+
+---
+
 2020-07-21 - [Code](animal-outcomes/animal-outcomes.R) - [Post](https://github.com/rfordatascience/tidytuesday/blob/master/data/2020/2020-07-21/readme.md)
 
 ![animal-outcomes](animal-outcomes/animal-outcomes.png)
