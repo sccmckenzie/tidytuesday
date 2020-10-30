@@ -4,6 +4,12 @@ Contributions to the R4DS Online Learning Community Project
 
 ---
 
+2020-10-29 - [Code](wind-turbines/wind-turbines.R) - [Post](https://github.com/rfordatascience/tidytuesday/blob/master/data/2020/2020-10-27/readme.md)
+
+![wind-turbines](wind-turbines/wind-turbines.png)
+
+---
+
 2020-09-15 - [Code](tidykids/tidykids.R) - [Post](https://github.com/rfordatascience/tidytuesday/blob/master/data/2020/2020-09-15/readme.md)
 
 ![tidykids](tidykids/tidykids.png)
